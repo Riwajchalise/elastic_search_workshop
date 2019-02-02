@@ -10,6 +10,8 @@ PUT hiking/_doc/1
   "cost": 2343,
   "bus_booked": false,
   "checklist": [
+    "Bag",
+    "Water",
     "food",
     "notebooks"
   ],
