@@ -46,11 +46,12 @@ GET product/_search
 }
 
 #5 ************************************
-GET product/_search
+GET shakespeare/_search
 {
   "query": {
-    "match_phrase_prefix": {
-      "name": "past"
+    "multi_match": {
+      "query": "Henry IV",  ***
+      "fields": ["play_name","speaker"]
     }
   }
 }
@@ -121,7 +122,7 @@ GET shakespeare/_search
 {
   "query": {
     "multi_match": {
-      "query": "Henry IV",
+      "query": "Henry IV",  ***
       "fields": ["play_name","speaker"]
     }
   }
